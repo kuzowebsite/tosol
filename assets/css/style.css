@@ -12,7 +12,7 @@
 
 /*-----------------------------------*\
   #CUSTOM PROPERTY
-\*-----------------------------------*/
+\*----------------------------------*/
 
 :root {
 
@@ -934,9 +934,9 @@ body {
 
 .newsletter-card {
   background-color: var(--raisin-black-3);
-  padding: 40px 15px;
+  padding: 120px 20px;
   margin-block-start: -55px;
-  border-radius: 80px;
+  border-radius: 0px;
 }
 
 .newsletter .h2 {
