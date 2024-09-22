@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 20px;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    width: 100%;
+}
+
+.video-container {
+    position: relative;
+    border: 2px solid #ddd;
+    padding: 10px;
+    background-color: #fff;
+    transition: transform 0.3s ease-in-out;
+}
+
+.video-container:hover {
+    transform: scale(1.1);
+}
+
+.video {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+button, .downloadBtn {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+button:hover, .downloadBtn:hover {
+    background-color: #0056b3;
+}
+
+.volumeSlider {
+    width: 100px;
+}
+
+.description {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+}

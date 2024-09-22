@@ -1,0 +1,53 @@
+/* Товчлууруудын стиль */
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* Товчнуудын хооронд зай */
+  margin-bottom: 20px;
+}
+
+.button-container button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #ffffff69;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.button-container button:hover {
+  background-color: hsl(42, 99%, 46%);
+  color: black;
+}
+
+/* Контент хэсэг */
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.item {
+  width: 420px;
+  margin: 55px;
+  text-align: center;
+  border: 1px solid #fff; /* Хүрээ цагаан болгов */
+  padding: 0px; 
+  border-radius: 30px;
+  transition: transform 0.3s ease, border-color 0.3s ease; /* Томрох болон хүрээний өөрчлөлт */
+}
+
+/* Hover үед томрох эффект */
+.item:hover {
+  transform: scale(1.05); /* Томрох хэмжээ */
+  border-color: #ffffff; /* Хүрээний өнгө hover үед цагаан болгох */
+}
+
+.hidden {
+  display: none;
+}
+
+video, audio, p {
+  border-radius: 30px; /* Элементүүдийн хүрээ дугуй болгох */
+}

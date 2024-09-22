@@ -1,0 +1,80 @@
+html, body {
+    width: 100%;
+    height: 100%;
+  }
+  body {
+    /*img src=http://wallpapercave.com/wp/EEWOcPS.jpg*/
+    background-image: url(/image/mongolbchg.jpg);
+    background-size: cover;
+    width: 100%;
+  }
+  h1 {
+    text-align: center;
+    color: white;
+  }
+  p {
+    padding: 20px;
+  }
+  em {
+    font-size: 1.5em;
+    text-align: center;
+  }
+  #quotecontainer {
+    position: relative;
+    background-color: rgba(245, 242, 242, 0.719);
+    border-radius: 25px;
+    margin: auto;
+    margin-top: 10em;
+    padding: 20px;
+    width: 40%;
+    height: 42%;
+  }
+  @media (max-width: 800px) {
+    #quotecontainer {
+      border-radius: 5%;
+      margin: auto;
+      margin-top: 2.5em;
+      margin-left: 30%;
+      padding: 10%;
+      padding-bottom: 0px;
+      width: 70%;
+      height: 10%;
+    }
+  }
+  #btn-bottom-right {
+    background-color: #25201D;
+    border-color: #25201D;
+    outline: none !important;
+    position: relative;
+    bottom: 20px;
+    right: 20px;
+    color: white;
+  }
+  @media (max-width: 800px) {
+    #btn-bottom-right {
+      position: relative;
+      right: 20%;
+    }
+  }
+
+  @media (max-width: 800px) {
+    #btn-bottom-left {
+      display: none;
+    }
+  }
+  #btn-bottom-left:hover, #btn-bottom-right:hover {
+    opacity: 0.5;
+  }
+  #parag {
+    text-align: center;
+    font-size: 1.5em;
+  }
+  @media (max-width: 800px) {
+    #parag {
+      text-align: center;
+      font-size: 1.2em;
+    }
+  .fa {
+      font-size: 1.2em;
+    }
+  }
