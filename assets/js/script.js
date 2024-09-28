@@ -68,3 +68,32 @@ document.querySelectorAll('.social-title').forEach(title => {
   });
 });
 
+let deferredPrompt;
+
+window.addEventListener('beforeinstallprompt', (event) => {
+  // Prevent the mini-infobar from appearing on mobile
+  event.preventDefault();
+  
+  // Stash the event so it can be triggered later.
+  deferredPrompt = event;
+
+  // Show the install button
+  const installButton = document.querySelector(".btn");
+  installButton.style.display = 'block';
+
+  installButton.addEventListener('click', () => {
+    // Show the install prompt
+    deferredPrompt.prompt();
+
+    // Wait for the user to respond to the prompt
+    deferredPrompt.userChoice.then((choiceResult) => {
+      if (choiceResult.outcome === 'accepted') {
+        console.log('User accepted the install prompt');
+      } else {
+        console.log('User dismissed the install prompt');
+      }
+      deferredPrompt = null; // Reset the prompt
+    });
+  });
+});
+
